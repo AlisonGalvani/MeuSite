@@ -52,7 +52,7 @@ body {
 }
 
 .navigation li.threeline-icon:hover {
-	color: #006ef4;
+	/* color: #006ef4; */
 	cursor: pointer;
 }
 

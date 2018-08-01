@@ -9,6 +9,6 @@ function openNav()
             y.innerHTML = "&Cross;";
     } else {
         x.className = 'navigation';
-        y.innerHTML =  '&#9776;';
+        y.innerHTML =  'Menu &#9776;';
     }
 }
