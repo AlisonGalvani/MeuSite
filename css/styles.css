@@ -382,3 +382,40 @@ body {
 
 
 }
+
+@media (max-width: 500px){
+	.profile-pic {
+		width: 100%;
+		
+		/*background: yellow;*/
+	}
+
+	.profile-pic img {
+		max-width: 60%;
+		margin-top: 0;
+	}
+
+	.profile-title { 
+		text-align: center;
+		width: 100%;
+		/*background: green;*/
+	}
+
+	.profile-title h1 {
+		margin-top: 20px;
+		font-size: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.capa span {
+		margin-top: -3px;
+		line-height: 130%;
+	}
+
+	.profile-title h2 {
+		margin-top: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
