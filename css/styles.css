@@ -277,6 +277,20 @@ body {
 	100% {opacity: 1; transform: translate(0px, 0px)}
 }
 
+@keyframes menuSmall {
+	0% {opacity: 0; transform: translate(0px, -200px);}
+	100% {opacity: 1; transform: translate(0px, 0px)};
+}
+
+@keyframes capaSmall {
+	0% {transform: translate(0px, -200px);}
+	100% {transform: translate(0px, 0px)};
+}
+
+@keyframes capaVoltar {
+	0% {transform: translate(0px, 0px);}
+	100% {transform: translate(0px, -200px)};
+}
 
 @media (max-width: 1000px){
 
@@ -376,7 +390,19 @@ body {
 		border-bottom: 1px solid gray;
 		width: 100%;
 		padding: 0;
-		
+
+		animation-name: menuSmall;
+		animation-duration: 2s;
+	}
+
+	.capaAnime{
+		animation-name: capaSmall;
+		animation-duration: 2s;
+	}
+
+	.capaVoltar {
+		animation-name: capaVoltar;
+		animation-duration: 2s;
 	}
 
 
@@ -414,7 +440,7 @@ body {
 	}
 
 	.profile-title h2 {
-		margin-top: 10px;
+		margin-top: 3px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
