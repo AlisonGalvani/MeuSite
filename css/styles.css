@@ -395,7 +395,7 @@ body {
 		animation-duration: 2s;
 	}
 
-	.capaAnime{
+	.mainAnimeOn{
 		animation-name: capaSmall;
 		animation-duration: 2s;
 	}
@@ -440,7 +440,7 @@ body {
 	}
 
 	.profile-title h2 {
-		margin-top: 3px;
+		margin-top:3px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
