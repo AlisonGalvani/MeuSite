@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <div class="treeview-animated w-20 border mx-4 my-4">
+    <h6 class="pt-3 pl-3">Contabilidade</h6>
+    <hr>
+    <ul class="treeview-animated-list mb-3">
+      <li class="treeview-animated-items">
+        <a class="closed">
+          <i class="fas fa-angle-right"></i>
+          <span><i class="fas fa-bug"></i> Bug 324481 - Contabilidade Relátorio</span>
+        </a>
+        <ul class="nested">
+          <li>
+            <div class="treeview-animated-element">Tributário </div>
+          </li>
+          <li>
+            <div class="treeview-animated-element">Recursos Humanos </div>
+          </li>
+          <li class="treeview-animated-items">
+            <a class="closed"><i class="fas fa-angle-right"></i>
+              <span>Contábil</span></a>
+            <ul class="nested">
+              <li class="treeview-animated-items">
+                <a class="closed"><i class="fas fa-angle-right"></i>
+                  <span>Documento</span></a>
+                <ul class="nested">
+                  <li>
+                    <div class="treeview-animated-element">Execução Financeira </div>
+                  </li>
+                  <li>
+                    <div class="treeview-animated-element">Transferência de
+                      recursos recebidos </div>
+                  </li>
+                  <li>
+                    <div class="treeview-animated-element">Serviços e equipamentos </div>
+                  </li>
+
+                  <li>
+                    <div class="treeview-animated-element">Auditoria e controle </div>
+                  </li>
+                  <li>
+                    <div class="treeview-animated-element">Gestão da divida
+                      pública </div>
+                  </li>
+                  <li>
+                    <div class="treeview-animated-element">Transferência de
+                      recursos concedidos </div>
+                  </li>
+
+                  <li class="treeview-animated-items">
+                    <a class="closed"><i class="fas fa-angle-right"></i>
+                      <span>Contabilidade</span></a>
+                    <ul class="nested">
+                      <li>
+                        <div class="treeview-animated-element">Relátorio de
+                          empenhos </div>
+                      </li>
+                      <li>
+                        <div class="treeview-animated-element">Relátorio de pessoa
+                          fisica e juridica </div>
+                      </li>
+                      <li class="treeview-animated-items">
+                        <a class="closed"><i class="fas fa-angle-right"></i>
+                          <span>Relátorio de cadastro econômico</span></a>
+                        <ul class="nested">
+                          <li>
+                            <div class="treeview-animated-element">Transação </div>
+                          </li>
+                          <li>
+                            <div class="treeview-animated-element">Cálculo de
+                              conta errada </div>
+                          </li>
+                          <li class="treeview-animated-items">
+                            <a class="closed"><i class="fas fa-angle-right"></i>
+                              <span>Resultado final incorreto</span></a>
+                            <ul class="nested">
+                              <li>
+                                <div id="nivelMaisBaixo" class="treeview-animated-element">Ajustar calculo
+                                  <div id="divDescricao" style="display: none;">
+                                    <textarea type="text" id="textUser" class="form-control" placeholder="Escrerva uma breve descrição"></textarea>
+                                  </div>
+                                </div> 
+                                <button data-toggle="modal" data-target="#basicExampleModal" id="btnGerar" style="margin-left: 50%; display: none;" type="button" class="btn btn-outline-success waves-effect btn-sm" onclick="montaMensagem()">Gerar</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <div class="treeview-animated-element"></i>Mensagem em
+                              tela</div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="treeview-animated-element">Relátorio de
+                          inventário </div>
+                      </li>
+
+                      <li>
+                        <div class="treeview-animated-element">Relátorio de divida
+                          ativa </div>
+                      </li>
+                      <li>
+                        <div class="treeview-animated-element">Relátorio de
+                          crédito a receber </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="treeview-animated-element">Execução Orçamentária </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="treeview-animated-element">ADM </div>
+          </li>
+        </ul>
+    </ul>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Mensagem gerada:</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" id="divMensagem">
+      
+    </div>
+    <div class="modal-footer">
+      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button> -->
+    </div>
+  </div>
+</div>
+</div>
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
