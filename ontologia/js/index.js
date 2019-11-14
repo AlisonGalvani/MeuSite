@@ -14,10 +14,8 @@ $('#btnGerar').on('click', function(e) {
 
 function montaMensagem() {  
   let textoUsuario = $('#textUser').val();
-  
-  let text = '<h5>Bug no <b>Resultado Final</b> do <b>Relátorio de cadastro econômico</b> dos relátorios da' +
-  ' <b>Contabilidade</b>, na guia <b>Documento</b> do módulo <b>Contábil</b><br> onde <b>' + textoUsuario +  '</b></h5>';
-  
+  let text = "<h5>Foi encontrado um bug <b> no Resultado Final do Relátorio de Cadastro Econômico da Contabilidade que encontra-se na guia Documento do módulo Contábil. Favor Ajustar o Cálculo. </b> <br><br> Descrição usuário: " + textoUsuario + "</h5>";
+  $('#divMensagem').empty();
   $('#divMensagem').prepend(text);
   $('#basicExampleModal').toggle();
 }
