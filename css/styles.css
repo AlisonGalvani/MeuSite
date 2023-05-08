@@ -23,7 +23,7 @@ body {
 	text-align: right;
 	height: 50px;
 	animation-name: navbar;
-	animation-duration: 4s;
+	animation-duration: 2s;
 }
 
 .navigation li {
@@ -66,7 +66,7 @@ body {
 
 .capa div {
 	display: inline-block;
-	height: 650px;
+	/* height: 650px; */
 }
 
 .profile-pic {
