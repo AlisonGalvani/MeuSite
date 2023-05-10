@@ -310,6 +310,19 @@ body {
 	margin-top: 0;
 }
 
+.menu_trabalhos {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.trabalhos_categoria {
+	width: 100%;
+	border-bottom: 1px solid white;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+}
+
 /********************trabalhos*******************/
 
 .foto-trabalhos {
