@@ -1,0 +1,12 @@
+body {
+    background-color: #000000;
+    animation: bgTransition 2s ease forwards;
+}
+
+.profile-img-curriculo {
+	float: left;
+	width: 250px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: 2px solid white;
+}

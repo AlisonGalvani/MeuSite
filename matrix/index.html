@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Desenvolvedor</title>
+  <style>
+    :root {
+      --primary-color: #8A05BE;
+      --text-color: #ffffff;
+      --bg-color: #000000;
+      --primary-color: #05f2db;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      overflow: hidden;
+    }
+
+    canvas#matrix {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 2rem 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--primary-color);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+
+    section.cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+      animation: slideUp 1.5s ease-in-out;
+    }
+
+    .cta-content {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid var(--primary-color);
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      animation: pulse 3s infinite;
+    }
+
+    .cta-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-content a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: var(--primary-color);
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .cta-content a:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 15px var(--primary-color);
+      }
+
+      50% {
+        box-shadow: 0 0 30px var(--primary-color);
+      }
+
+      100% {
+        box-shadow: 0 0 15px var(--primary-color);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="matrix"></canvas>
+
+  <header>
+    <h1>Alison Galvani</h1>
+    <p>Desenvolvedor Full Stack apaixonado por tecnologia e inovação</p>
+  </header>
+
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Explore meus projetos, ideias e soluções</h2>
+      <a href="#">Ver Portfólio</a>
+    </div>
+  </section>
+
+  <script>
+    const canvas = document.getElementById("matrix");
+    const ctx = canvas.getContext("2d");
+
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+
+    const letters = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const fontSize = 14;
+    const columns = canvas.width / fontSize;
+    const drops = Array(Math.floor(columns)).fill(1);
+
+    function drawMatrix() {
+      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#05f2db";
+      ctx.font = `${fontSize}px monospace`;
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = letters[Math.floor(Math.random() * letters.length)];
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+
+        drops[i]++;
+      }
+    }
+
+    setInterval(drawMatrix, 33);
+  </script>
+</body>
+
+</html>

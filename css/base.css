@@ -1,0 +1,194 @@
+:root {
+	--primary-color: #8A05BE;
+	--text-color: #ffffff;
+	--bg-color-home: #000000;
+
+	--primary-color: #05f2db;
+	--primary-color-light: #4ff0e0;
+	--primary-color-dark: #019c8d;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2b2b2b;
+	color: var(--text-color)
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(8px);
+	display: flex;
+	justify-content: flex-end;
+	padding: 1rem 2rem;
+	z-index: 10;
+}
+
+nav a {
+	margin-left: 2rem;
+	color: var(--primary-color);
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+
+nav a:hover, nav a:active {
+	color: #ffffff;
+}
+
+
+nav .threeline-icon {
+	display: none;
+}
+
+nav .threeline-icon:hover {
+	cursor: pointer;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 10rem;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.main {
+	padding: 80px 180px 90px 100px;
+	animation-name: conteudo;
+	animation-duration: 2s;
+}
+
+.main h1 {
+	color: var(--primary-color);
+	font-weight: normal;
+}
+
+.main h2 {
+	color: var(--primary-color);
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-top: 40px;
+}
+
+.main h3 {
+	color: var(--primary-color);
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.main p {
+	color: var(--text-color);
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 24px;
+	text-align: justify;
+}
+
+@media (max-width: 1000px) {
+	.main {
+		padding: 10px 5% 40px 5%;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+	}
+
+	.main p {
+		text-align: left;
+		line-height: 30px;
+	}
+}
+
+.caminho {
+	list-style: none;
+	padding-left: 0;
+	color: gray;
+}
+
+.caminho li {
+	display: inline-block;
+}
+
+.caminho a {
+	color: gray;
+}
+
+
+@media (max-width: 1000px) {
+	.caminho li {
+		font-size: 12px;
+	}
+}
+
+.back-link {
+	color: var(--primary-color);
+}
+
+.foto-trabalhos {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.bottom-to-top { 
+    animation: BottomToTop 1s ease-out forwards;
+}
+
+.top-to-bottom { 
+    animation: TopToBottom 1s ease-out forwards;
+}
+
+@keyframes RightToLeft {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes BottomToTop {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes TopToBottom {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+	to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bgTransition {
+    from {
+        background-color: #000000;
+    }
+
+    to {
+        background-color: #2b2b2b;
+    }
+}

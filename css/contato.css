@@ -1,0 +1,9 @@
+body {
+    background-color: #000000;
+    animation: bgTransition 2s ease forwards;
+}
+
+.social-img {
+	width: 50px;
+	margin-right: 10px;
+}

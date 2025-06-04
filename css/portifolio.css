@@ -1,0 +1,78 @@
+body {
+    background-color: #000000;
+    animation: bgTransition 2s ease forwards;
+}
+
+.menu_trabalhos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.trabalhos_categoria {
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.miniatura {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-size: contain;
+    overflow: hidden;
+    border-radius: 5px;
+    animation: RightToLeft 1s ease-out forwards;
+}
+
+.miniatura a {
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .miniatura {
+        max-width: 100%;
+        background-size: auto 100%;
+    }
+}
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: 1s;
+}
+
+.blackbox:hover {
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.blackbox {
+    text-align: center;
+}
+
+.blackbox-text h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 140px;
+}
+
+.blackbox-text h2 {
+    text-transform: none;
+    font-weight: 400;
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+@media (max-width: 1000px) {
+    .blackbox {
+        opacity: 0.8;
+    }
+}

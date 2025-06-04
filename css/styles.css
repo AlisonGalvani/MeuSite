@@ -1,14 +1,3 @@
-html, body {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	background-color: #2b2b2b;
-	color: white;
-	font-family: 'Montserrat', sans-serif;
-}
-
 .navigation {
 	background-color: #2b2b2b;
 	color: white;
@@ -35,23 +24,7 @@ body {
 	font-weight: 100;
 }
 
-.navigation a {
-	color: white;
-	text-decoration: none;
-}
 
-.navigation a:hover {
-	color: #006ef4;
-}
-
-.navigation li.threeline-icon {
-	display: none;
-}
-
-.navigation li.threeline-icon:hover {
-	/* color: #006ef4; */
-	cursor: pointer;
-}
 
 .capa {
 	color: white;
@@ -107,71 +80,6 @@ body {
 
 .profile-title img {
 	width: 30px;
-}
-
-.back-link {
-	color: #006ef4;
-}
-
-/*********************** Curriculo ********************/
-
-.main {
-	padding: 80px 180px 90px 100px;
-	animation-name: conteudo;
-	animation-duration: 2s;
-}
-
-.main h1 {
-	color: white;
-	font-weight: normal;
-}
-
-.main h2 {
-	color: white;
-	font-size: 16px;
-	text-transform: uppercase;
-	font-weight: normal;
-	margin-top: 40px;
-}
-
-.main h3 {
-	color: #006ef4;
-	font-size: 12px;
-	text-transform: uppercase;
-}
-
-.main p {
-	color: white;
-	font-size: 18px;
-	font-weight: 100;
-	line-height: 24px;
-	text-align: justify;
-}
-
-.main img {}
-
-.caminho {}
-
-.caminho {
-	list-style: none;
-	padding-left: 0;
-	color: gray;
-}
-
-.caminho li {
-	display: inline-block;
-}
-
-.caminho a {
-	color: gray;
-}
-
-.profile-img {
-	float: left;
-	width: 250px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	border: 2px solid white;
 }
 
 /*************************************************************** FLOAT ************************************/
@@ -237,99 +145,19 @@ body {
 	box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
 }
 
-/* .fab button.mainn:active + ul,
-  .fab button.mainn:focus + ul{
-	bottom: 70px;
-  }
-  
-  .fab button.mainn:active + ul li,
-  .fab button.mainn:focus + ul li{
-	margin-bottom: 10px;
-	opacity: 1;
-  }
-  
-  .fab button.mainn:active + ul li:hover label,
-  .fab button.mainn:focus + ul li:hover label{
-	opacity: 1;
-  } */
-
 /*******************************************************************************************************/
 
 /*****************Contato***************/
 
-.social-img {
-	width: 50px;
-	margin-right: 10px;
-}
 
 /**************** PORTFOLIO ***************/
 
-.miniatura {
-	width: 320px;
-	height: 320px;
-	display: inline-block;
-	margin-right: 15px;
-	margin-bottom: 15px;
-	background-size: contain;
-	overflow: hidden;
-}
 
-.miniatura a {
-	text-decoration: none;
-}
 
-.blackbox {
-	width: 100%;
-	height: 100%;
-	background: black;
-	opacity: 0;
-	transition: 1s;
-}
 
-.blackbox:hover {
-	opacity: 0.8;
-	transition: 1s;
-}
 
-.blackbox {
-	text-align: center;
-}
-
-.blackbox-text h1 {
-	font-size: 16px;
-	font-weight: 400;
-	color: #006ef4;
-	text-transform: uppercase;
-	margin-top: 0;
-	padding-top: 140px;
-}
-
-.blackbox-text h2 {
-	text-transform: none;
-	font-weight: 100;
-	margin-top: 0;
-}
-
-.menu_trabalhos {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}
-
-.trabalhos_categoria {
-	width: 100%;
-	border-bottom: 1px solid white;
-	margin-bottom: 15px;
-	padding-bottom: 5px;
-}
 
 /********************trabalhos*******************/
-
-.foto-trabalhos {
-	width: 100%;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
 
 @keyframes profile-capa {
 	0% {
@@ -449,30 +277,11 @@ body {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-	.main {
-		padding: 10px 5% 40px 5%;
-		overflow-wrap: break-word;
-		word-wrap: break-word;
-	}
-	.main p {
-		text-align: left;
-		line-height: 30px;
-	}
-	.caminho li {
-		font-size: 12px;
-	}
 	.profile-img {
 		float: none;
 		max-width: 100%;
 		margin-right: 0px;
 		/* margin-left: 0px; */
-	}
-	.miniatura {
-		max-width: 100%;
-		background-size: auto 100%;
-	}
-	.blackbox {
-		opacity: 0.8;
 	}
 	.menujs {
 		height: auto;

@@ -1,0 +1,11 @@
+{
+    "files.encoding": "utf8",
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "eslint.validate": ["javascript"],
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true
+}

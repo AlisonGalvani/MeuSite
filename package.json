@@ -1,0 +1,17 @@
+{
+  "name": "site-alison",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint ./src/** --ext .js --fix",
+    "dev": "live-server --open=./index.html"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "eslint": "^9.28.0",
+    "live-server": "^1.2.2"
+  }
+}
