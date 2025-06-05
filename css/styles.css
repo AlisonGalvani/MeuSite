@@ -1,8 +1,7 @@
-.navigation {
+/* .navigation {
 	background-color: #2b2b2b;
 	color: white;
 	height: 50px;
-	/* margin-top: 0; */
 }
 
 .navigation ul {
@@ -22,25 +21,11 @@
 	line-height: 50px;
 	font-size: 18px;
 	font-weight: 100;
-}
+} */
 
 
 
-.capa {
-	color: white;
-	vertical-align: top;
-	padding-bottom: 20px;
-}
 
-.capa span {
-	color: #006ef4;
-	display: block;
-}
-
-.capa div {
-	display: inline-block;
-	/* height: 650px; */
-}
 
 .profile-pic {
 	width: 40%;
@@ -204,37 +189,10 @@
 	}
 }
 
-@keyframes menuSmall {
-	0% {
-		opacity: 0;
-		transform: translate(0px, -200px);
-	}
-	100% {
-		opacity: 1;
-		transform: translate(0px, 0px)
-	}
-	;
-}
 
-@keyframes capaSmall {
-	0% {
-		transform: translate(0px, -200px);
-	}
-	100% {
-		transform: translate(0px, 0px)
-	}
-	;
-}
 
-@keyframes capaVoltar {
-	0% {
-		transform: translate(0px, 0px);
-	}
-	100% {
-		transform: translate(0px, -200px)
-	}
-	;
-}
+
+
 
 @media (max-width: 1000px) {
 	.navigation li {
@@ -243,10 +201,7 @@
 	.navigation li.threeline-icon {
 		display: inline-block;
 	}
-	.capa div {
-		display: block;
-		height: auto;
-	}
+
 	.profile-pic {
 		width: 100%;
 		/*background: yellow;*/
@@ -268,10 +223,7 @@
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-	.capa span {
-		margin-top: -3px;
-		line-height: 130%;
-	}
+
 	.profile-title h2 {
 		margin-top: 10px;
 		margin-left: 20px;
@@ -283,31 +235,8 @@
 		margin-right: 0px;
 		/* margin-left: 0px; */
 	}
-	.menujs {
-		height: auto;
-	}
-	.menujs ul {
-		height: auto;
-		text-align: center;
-		padding-right: 15%;
-		padding-left: 15%;
-	}
-	.menujs li {
-		display: block;
-		border-bottom: 1px solid gray;
-		width: 100%;
-		padding: 0;
-		animation-name: menuSmall;
-		animation-duration: 2s;
-	}
-	.mainAnimeOn {
-		animation-name: capaSmall;
-		animation-duration: 2s;
-	}
-	.capaVoltar {
-		animation-name: capaVoltar;
-		animation-duration: 2s;
-	}
+
+
 }
 
 @media (max-width: 500px) {
@@ -330,10 +259,7 @@
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-	.capa span {
-		margin-top: -3px;
-		line-height: 130%;
-	}
+
 	.profile-title h2 {
 		margin-top: 3px;
 		margin-left: 20px;

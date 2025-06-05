@@ -27,21 +27,22 @@ function spawnCode() {
     setTimeout(() => div.remove(), 10000)
 }
 
-setInterval(spawnCode, 150)
+// setInterval(spawnCode, 150)
 
-function openNav(name)
-{ 
-    var x = document.getElementById('navigation')
+function openNav()
+{
+    var x = document.getElementsByTagName('nav')[0]
     var y = document.getElementById('threeline-icon')
-    var z = document.getElementById('conteudoMove')
     
     if (x.className === 'navigation') {
-        x.className += ' menujs'
+        x.className += ' menujs mainAnimeOn'
         y.innerHTML = '&Cross;'
-        z.className += ' mainAnimeOn'
     } else {
-        x.className = 'navigation'
+        x.className = 'menujs mainAnimeOff'
         y.innerHTML =  'Menu &#9776;'
-        z.className = name
+
+        setTimeout(()=> { 
+            x.className = 'navigation' 
+        }, 2000)
     }
 }
