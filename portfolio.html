@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <link rel="icon" type="imagem/png" href="img/icon/Alison.png" />
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
 
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon.ico">
+
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/portifolio.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
-	<script type="text/javascript" src="js/scripts.js"></script>
-	<link rel="icon" type="imagem/png" href="img/icon/Alison.png" />
 
 	<title>Alison Galvani - Portfólio</title>
 </head>
 
 
-<body>
+<body class="body-home">
+	<div id="code-bg"></div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="curriculo.html">Currículo</a>
-        <a href="contato.html">Contato</a>
-        <a id="threeline-icon" class="threeline-icon" onclick="openNav('capa')">&#9776</a>
-    </nav>
+	<nav class="navigation">
+		<a href="index.html">Home</a>
+		<a href="portfolio.html">Portfólio</a>
+		<a href="curriculo.html">Currículo</a>
+		<a href="contato.html">Contato</a>
+		<a id="threeline-icon" class="threeline-icon" onclick="openNav()">Menu &#9776</a>
+	</nav>
 
 
-	<div id="conteudoMove" class="main">
+	<div class="main">
 
 
 		<ul class="caminho">
@@ -58,7 +57,7 @@
 						</div>
 					</a>
 				</div>
-				
+
 				<div class="miniatura" style='background-image: url("img/portfolio/BI/mkp1.jpg");'>
 					<a href="./portfolio/BI.html">
 						<div class="blackbox">
@@ -69,6 +68,29 @@
 						</div>
 					</a>
 				</div>
+
+				<div class="miniatura" style='background-image: url("img/portfolio/AreaCliente/mkp1.jpg");'>
+					<a href="./portfolio/OneAcessos.html">
+						<div class="blackbox">
+							<div class="blackbox-text">
+								<h1>One Acessos</h1>
+								<h2>Full-Stack</h2>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="miniatura" style='background-image: url("img/portfolio/ApiNodejs/node1.jpg");'>
+					<a href="./portfolio/ApiNodejs.html">
+						<div class="blackbox">
+							<div class="blackbox-text">
+								<h1>Reengenharia de API NodeJS</h1>
+								<h2>BackEnd</h2>
+							</div>
+						</div>
+					</a>
+				</div>
+
 			</div>
 
 			<div>
@@ -100,24 +122,19 @@
 			</div>
 		</div>
 
-		<!-- <div class="miniatura" style='background-image: url("img/ccb.jpg");'>
-					<a href="webdesign-ccb.html">
-					<div class="blackbox">
-						<div class="blackbox-text">
-							<h1>Centro CUltural Brasileiro</h1>
-							<h2>Web Design</h2>
-						</div>
-					</div>
-					</a>
-				</div>				 -->
-
 		<br>
 		<a class="back-link" href="index.html">&larr;Voltar ao início<a>
 
 	</div>
 
 
-
+	<script type="text/javascript" src="js/index.js"></script>
+	
+	<script type="text/javascript">
+		window.onload = function () {
+			animation2Start()
+		};
+	</script>
 </body>
 
 </html>

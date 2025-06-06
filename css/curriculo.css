@@ -1,6 +1,6 @@
 body {
     background-color: #000000;
-    animation: bgTransition 2s ease forwards;
+    animation: bgTransition 2.5s ease forwards;
 }
 
 .profile-img-curriculo {
@@ -9,4 +9,10 @@ body {
 	margin-right: 20px;
 	margin-bottom: 20px;
 	border: 2px solid white;
+}
+
+@media (max-width: 1000px) {
+	.profile-img-curriculo {
+		width: 160px;
+	}
 }

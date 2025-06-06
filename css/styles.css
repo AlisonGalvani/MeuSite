@@ -1,32 +1,3 @@
-/* .navigation {
-	background-color: #2b2b2b;
-	color: white;
-	height: 50px;
-}
-
-.navigation ul {
-	margin-top: 0;
-	list-style: none;
-	padding-left: 0;
-	text-align: right;
-	height: 50px;
-	animation-name: navbar;
-	animation-duration: 2s;
-}
-
-.navigation li {
-	display: inline-block;
-	padding-left: 30px;
-	padding-right: 30px;
-	line-height: 50px;
-	font-size: 18px;
-	font-weight: 100;
-} */
-
-
-
-
-
 .profile-pic {
 	width: 40%;
 	text-align: center;
@@ -111,7 +82,7 @@
     display: block;
     margin-top: -44px;
     padding: 5px 8px;
-	background-color: #2b2b2b;
+	background-color: var(--bg-color);
 	color: #006ef4;
     box-shadow: 0 1px 3px rgb(121, 121, 121);
     border-radius: 3px;

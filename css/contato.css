@@ -1,6 +1,6 @@
 body {
     background-color: #000000;
-    animation: bgTransition 2s ease forwards;
+    animation: bgTransition 2.5s ease forwards;
 }
 
 .social-img {

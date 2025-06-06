@@ -2,28 +2,36 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <link rel="icon" type="imagem/png" href="img/icon/Alison.png" />
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="../css/base.css">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
 
-    <title>Alison Galvani - Escalonador</title>
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon.ico">
+
+	<link rel="stylesheet" href="../css/base.css">
+
+	<title>Alison Galvani - Escalonador</title>
+
+	<style>
+		body {
+			background-color: var(--bg-color-home);
+			animation: bgTransition 2.5s ease forwards;
+		}
+	</style>
 </head>
 
 
 <body>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="../portfolio.html">Portfólio</a>
-        <a href="../curriculo.html">Currículo</a>
-        <a href="../contato.html">Contato</a>
-        <a id="threeline-icon" class="threeline-icon" onclick="openNav('capa')">&#9776</a>
-    </nav>
+	<nav class="navigation">
+		<a href="../index.html">Home</a>
+		<a href="../portfolio.html">Portfólio</a>
+		<a href="../curriculo.html">Currículo</a>
+		<a href="../contato.html">Contato</a>
+		<a id="threeline-icon" class="threeline-icon" onclick="openNav()">Menu &#9776</a>
+	</nav>
 
-	<div id='conteudoMove' class="main top-to-bottom">
+	<div class="main top-to-bottom">
 
 		<ul class="caminho">
 			<li><a href="../index.html">Home</a></li>
@@ -35,7 +43,8 @@
 
 		<h1>Escalonador de Processos (didático)</h1>
 
-		<img src="../img/portfolio/Escalonador/MokEscalonador.jpg" class="foto-trabalhos" alt="escalonador de processos">
+		<img src="../img/portfolio/Escalonador/MokEscalonador.jpg" class="foto-trabalhos"
+			alt="escalonador de processos">
 
 		<h2>Conteúdo didático para professores e alunos</h2>
 		<p>
@@ -58,7 +67,7 @@
 
 		<p>
 			Link para usa-lo: <a href="https://alisongalvani.github.io/EscalonadorDeProcessos/" target="_blank"
-				style="color: rgb(79, 79, 238)">
+				style="color: var(--primary-color)">
 				https://alisongalvani.github.io/EscalonadorDeProcessos/</a>
 		</p>
 
@@ -67,7 +76,7 @@
 
 	</div>
 
-
+	<script type="text/javascript" src="../js/index.js"></script>
 </body>
 
 </html>

@@ -2,35 +2,42 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <link rel="icon" type="imagem/png" href="img/icon/Alison.png" />
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="../css/base.css">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
 
-    <title>Alison Galvani - Área do cliente</title>
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon.ico">
+
+	<link rel="stylesheet" href="../css/base.css">
+
+	<title>Alison Galvani - Área do cliente</title>
+
+	<style>
+		body {
+			background-color: var(--bg-color-home);
+			animation: bgTransition 2.5s ease forwards;
+		}
+	</style>
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="../portfolio.html">Portfólio</a>
-        <a href="../curriculo.html">Currículo</a>
-        <a href="../contato.html">Contato</a>
-        <!-- <a id="threeline-icon" class="threeline-icon" onclick="openNav('capa')">&#9776</a> -->
-    </nav>
+	<nav class="navigation">
+		<a href="../index.html">Home</a>
+		<a href="../portfolio.html">Portfólio</a>
+		<a href="../curriculo.html">Currículo</a>
+		<a href="../contato.html">Contato</a>
+		<a id="threeline-icon" class="threeline-icon" onclick="openNav()">Menu &#9776</a>
+	</nav>
 
-
-	<div id="conteudoMove" class="main top-to-bottom">
+	<div class="main top-to-bottom">
 
 		<ul class="caminho">
 			<li><a href="../index.html">Home</a></li>
 			<li>></li>
 			<li><a href="../portfolio.html">Portfólio</a></li>
 			<li>></li>
-			<li>App Chamados</li>
+			<li>Área do Cliente</li>
 		</ul>
 
 		<h1>Área do cliente ONE</h1>
@@ -39,10 +46,12 @@
 
 		<h2>Simplificando e agilizando para os clientes da One Portaria</h2>
 		<p>
-			Essa plataforma é um compilado de informações e funcionalidades essenciais para os clientes que usam as soluções da one. Antes
-			era necessário que o cliente entrasse em contato para solicitar ou alterar essas informações, e agora com a Área do cliente 
+			Essa plataforma é um compilado de informações e funcionalidades essenciais para os clientes que usam as
+			soluções da one. Antes
+			era necessário que o cliente entrasse em contato para solicitar ou alterar essas informações, e agora com a
+			Área do cliente
 			conseguem de forma ágil e fácil ver ou alterar essas informações.
-		</p>		
+		</p>
 
 		<img src="../img/portfolio/AreaCliente/mkp3.jpg" class="foto-trabalhos" alt="Área do cliente ONE via celular">
 
@@ -68,44 +77,50 @@
 		<h2>Minha contribuição e desafios</h2>
 		<p>
 			Fui designado para ser o lider do projeto, enfrentando o desafio de construir a plataforma do zero
-			em 30 dias, utilizando no front-end o framework React. Porém nem eu, nem os 4 membros da equipe possuiam experiencia 
+			em 30 dias, utilizando no front-end o framework React. Porém nem eu, nem os 4 membros da equipe possuiam
+			experiencia
 			concreta com o framework.
 		</p>
 		<p>
-			Arquitetei, fiz o cronograma, tracei metas semanais, deleguei responsabilidades e conduzi a equipe para que a meta dos 30 dias fosse cumprida
+			Arquitetei, fiz o cronograma, tracei metas semanais, deleguei responsabilidades e conduzi a equipe para que
+			a meta dos 30 dias fosse cumprida
 			utilizando algumas estratégias:
-			<ul>
-				<li>
-					Dividindo a equipe entre front-end e back-end para que andassem em paralelo, 
-					e para que a curva de aprendizado com React fosse mais rápida.
-				</li>
-				<li>
-					Reunião todas as segundas-feiras para:
-					<ul>
-						<li>Passar a meta da semana</li>
-						<li>
-							Definir e documentar com os times como seria o retorno da API para cada funcionalidade.
-							Assim os dois times conseguiam fazer a mesma funcionalidade em paralelo, fazendo os testes de integração 
-							ao finalizarem
-						</li>
-					</ul>
-				</li>
-				<li>
-					Reunião todas as sexta-feiras para mostrar e alinhar as entregas da semana com o CEO, e discutir soluções de problemas
-				</li>
-				<li>
-					Alinhando com os times e documentando muito bem cada funcionalidade para que não houvesse retrabalho
-				</li>
-			</ul>
+		<ul>
+			<li>
+				Dividindo a equipe entre front-end e back-end para que andassem em paralelo,
+				e para que a curva de aprendizado com React fosse mais rápida.
+			</li>
+			<li>
+				Reunião todas as segundas-feiras para:
+				<ul>
+					<li>Passar a meta da semana</li>
+					<li>
+						Definir e documentar com os times como seria o retorno da API para cada funcionalidade.
+						Assim os dois times conseguiam fazer a mesma funcionalidade em paralelo, fazendo os testes de
+						integração
+						ao finalizarem
+					</li>
+				</ul>
+			</li>
+			<li>
+				Reunião todas as sexta-feiras para mostrar e alinhar as entregas da semana com o CEO, e discutir
+				soluções de problemas
+			</li>
+			<li>
+				Alinhando com os times e documentando muito bem cada funcionalidade para que não houvesse retrabalho
+			</li>
+		</ul>
 		</p>
 		<p>
-			Obtivemos sucesso no prazo e no desafio de construir algo performático e de fácil manutenção com uma tecnologia que não dominávamos.
+			Obtivemos sucesso no prazo e no desafio de construir algo performático e de fácil manutenção com uma
+			tecnologia que não dominávamos.
 		</p>
 		<br><br>
 		<a class="back-link" href="../portfolio.html">&larr;Voltar ao portfólio<a>
 
 	</div>
 
+	<script type="text/javascript" src="../js/index.js"></script>
 </body>
 
 </html>

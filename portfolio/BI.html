@@ -2,30 +2,37 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <link rel="icon" type="imagem/png" href="img/icon/Alison.png" />
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="../css/base.css">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
 
-    <title>Alison Galvani - B.I</title>
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon.ico">
+
+	<link rel="stylesheet" href="../css/base.css">
+
+	<title>Alison Galvani - B.I</title>
+
+	<style>
+		body {
+			background-color: var(--bg-color-home);
+			animation: bgTransition 2.5s ease forwards;
+		}
+	</style>
 </head>
 
 
 <body>
+	<nav class="navigation">
+		<a href="../index.html">Home</a>
+		<a href="../portfolio.html">Portfólio</a>
+		<a href="../curriculo.html">Currículo</a>
+		<a href="../contato.html">Contato</a>
+		<a id="threeline-icon" class="threeline-icon" onclick="openNav()">Menu &#9776</a>
+	</nav>
 
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="../portfolio.html">Portfólio</a>
-        <a href="../curriculo.html">Currículo</a>
-        <a href="../contato.html">Contato</a>
-        <!-- <a id="threeline-icon" class="threeline-icon" onclick="openNav('capa')">&#9776</a> -->
-    </nav>
 
-
-	<div id="conteudoMove" class="main top-to-bottom">
+	<div class="main top-to-bottom">
 
 		<ul class="caminho">
 			<li><a href="../index.html">Home</a></li>
@@ -39,32 +46,41 @@
 
 		<img src="../img/portfolio/BI/img3.jpg" class="foto-trabalhos" alt="B.I">
 
-		<h2>Otimizando e reduzindo custos de operação para os clientes que usam a solução da empresa One Portaria Remota</h2>
-		<p>Trabalho feito dentro da empresa One Portaria na qual trabalho. Esse produto traz uma visão geral sobre a operação da empresa,
-			visando reduzir custos e otimizar a parte operacional. São mais de 85 gráficos, trazendo métricas importantes como:
-			<ul>
-				<li>Quantidade e tempo de duração do atendimento dos operadores</li>
-				<li>Rankin dos operadores mais e menos ageis, dando a possibilidade de criar metas e fazer uma premiação para os mesmos</li>
-				<li>Média de tempo de espera da empresa ou por operador que as ligações levam para ser atendidas</li>
-				<li>Quantidade de atendimentos no dia X quantidade de atendimentos no periodo selecionado no filtro</li>
-				<li>Quantidade de atendimentos por hora no dia e no periodo selecionado no filtro</li>
-				<li>Clientes que são mais custosos para a empresa</li>
-				<li>Visão geral com todas as métricas necessárias por cliente da empresa, afim de entender, otimizar e melhorar os serviços prestados</li>
-				<li>...Muitos outros</li>
-			</ul>
+		<h2>Otimizando e reduzindo custos de operação para os clientes que usam a solução da empresa One Portaria Remota
+		</h2>
+		<p>Trabalho feito dentro da empresa One Portaria na qual trabalho. Esse produto traz uma visão geral sobre a
+			operação da empresa,
+			visando reduzir custos e otimizar a parte operacional. São mais de 85 gráficos, trazendo métricas
+			importantes como:
+		<ul>
+			<li>Quantidade e tempo de duração do atendimento dos operadores</li>
+			<li>Rankin dos operadores mais e menos ageis, dando a possibilidade de criar metas e fazer uma premiação
+				para os mesmos</li>
+			<li>Média de tempo de espera da empresa ou por operador que as ligações levam para ser atendidas</li>
+			<li>Quantidade de atendimentos no dia X quantidade de atendimentos no periodo selecionado no filtro</li>
+			<li>Quantidade de atendimentos por hora no dia e no periodo selecionado no filtro</li>
+			<li>Clientes que são mais custosos para a empresa</li>
+			<li>Visão geral com todas as métricas necessárias por cliente da empresa, afim de entender, otimizar e
+				melhorar os serviços prestados</li>
+			<li>...Muitos outros</li>
+		</ul>
 		</p>
 
 		<img src="../img/portfolio/BI/mkp2.jpg" class="foto-trabalhos" alt="Foto trabalho">
 
-		<p>Além de métricas em gráficos, o B.I mostra em tempo real todas as ligações que estão acontecendo na empresa, medindo o tempo e mostrando
-			em cards se aquele atendimentou já extourou o tempo ideal de duração definido e configurado pela empresa. Tambem mostra quais são os operadores
-			trabalhando naquele momento, com o tempo de expediente de cada um e um indicativo de que o operador está ativo, em pausa ou se já excedeu
-			o tempo de trabalho definido pela empresa. Além de dar a opção para os usuários com permissão de gerência de:
-			<ul>
-				<li>Ouvir uma ligação em andamento</li>
-				<li>Entrar em conferência com alguma ligação em andamento</li>
-				<li>Finalizar ou Pausar o expediente de algum operador</li>
-			</ul>
+		<p>Além de métricas em gráficos, o B.I mostra em tempo real todas as ligações que estão acontecendo na empresa,
+			medindo o tempo e mostrando
+			em cards se aquele atendimentou já extourou o tempo ideal de duração definido e configurado pela empresa.
+			Tambem mostra quais são os operadores
+			trabalhando naquele momento, com o tempo de expediente de cada um e um indicativo de que o operador está
+			ativo, em pausa ou se já excedeu
+			o tempo de trabalho definido pela empresa. Além de dar a opção para os usuários com permissão de gerência
+			de:
+		<ul>
+			<li>Ouvir uma ligação em andamento</li>
+			<li>Entrar em conferência com alguma ligação em andamento</li>
+			<li>Finalizar ou Pausar o expediente de algum operador</li>
+		</ul>
 		</p>
 
 		<img src="../img/portfolio/BI/img2.jpg" class="foto-trabalhos" alt="Foto trabalho">
@@ -83,13 +99,16 @@
 		<ul>
 			<li>NodeJS</li>
 			<li>API</li>
-			<li>Integração com outra API NodeJS feita por mim, que roda dentro de uma central telefônica e coleta dados das ligações em tempo real</li>
+			<li>Integração com outra API NodeJS feita por mim, que roda dentro de uma central telefônica e coleta dados
+				das ligações em tempo real</li>
 			<li>SQL (MySQL e SQLServer)</li>
 		</ul>
 
 		<h2>Minha contribuição nesse projeto</h2>
-		<p>Liderei, arquitetei e desenvolvi todo o projeto, trabalhando inicialmente com mais 1 colaborador. Posteriormente houve a necessidade 
-			de expandir a equipe com mais 3 colaboradores, então os treinei e liderei para que o projeto andasse mais de pressa.
+		<p>Liderei, arquitetei e desenvolvi todo o projeto, trabalhando inicialmente com mais 1 colaborador.
+			Posteriormente houve a necessidade
+			de expandir a equipe com mais 3 colaboradores, então os treinei e liderei para que o projeto andasse mais de
+			pressa.
 			Hoje sou o responsável por manter e fazer novas implementações desse projeto
 		</p>
 
@@ -98,6 +117,7 @@
 
 	</div>
 
+	<script type="text/javascript" src="../js/index.js"></script>
 </body>
 
 </html>

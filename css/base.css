@@ -1,6 +1,6 @@
 :root {
-	--primary-color: #8A05BE;
 	--text-color: #ffffff;
+	--bg-color: #2b2b2b;
 	--bg-color-home: #000000;
 
 	--primary-color: #05f2db;
@@ -16,7 +16,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #2b2b2b;
+	background-color: var(--bg-color);
 	color: var(--text-color)
 }
 
@@ -42,7 +42,8 @@ nav a {
 	transition: color 0.3s;
 }
 
-nav a:hover, nav a:active {
+nav a:hover,
+nav a:active {
 	color: #ffffff;
 }
 
@@ -85,11 +86,13 @@ nav .threeline-icon:hover {
 	animation-name: menuSmall;
 	animation-duration: 2s;
 }
+
 @keyframes menuSmall {
 	0% {
 		opacity: 0;
 		transform: translate(0px, -200px);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translate(0px, 0px)
@@ -105,6 +108,7 @@ nav .threeline-icon:hover {
 	0% {
 		transform: translate(0px, 0px);
 	}
+
 	100% {
 		transform: translate(0px, -120px);
 	}
@@ -114,9 +118,14 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
 	margin-top: 10rem;
 	animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+	header {
+		margin-top: 6rem;
+	}
 }
 
 .main {
@@ -157,6 +166,7 @@ header {
 		padding: 10px 5% 40px 5%;
 		overflow-wrap: break-word;
 		word-wrap: break-word;
+		padding-top: 50px;
 	}
 
 	.main p {
@@ -197,55 +207,99 @@ header {
 	border-radius: 10px;
 }
 
-.bottom-to-top { 
-    animation: BottomToTop 1s ease-out forwards;
+.bottom-to-top {
+	animation: BottomToTop 1s ease-out forwards;
 }
 
-.top-to-bottom { 
-    animation: TopToBottom 1s ease-out forwards;
+.top-to-bottom {
+	animation: TopToBottom 1s ease-out forwards;
+}
+
+.body-home {
+  background-color: var(--bg-color-home) !important;
+  color: var(--text-color) !important;
+  overflow: hidden !important;
+  padding: 0 20px;
+}
+
+#code-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.code-snippet {
+  position: absolute;
+  color: var(--primary-color-dark);
+  font-family: monospace;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  animation: appear 6s linear infinite;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
 }
 
 @keyframes RightToLeft {
-    from {
-        transform: translateX(100px);
-        opacity: 0;
-    }
+	from {
+		transform: translateX(100px);
+		opacity: 0;
+	}
 
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
 @keyframes BottomToTop {
-    from {
-        transform: translateY(100px);
-        opacity: 0;
-    }
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	}
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 @keyframes TopToBottom {
-    from {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
+	from {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+
 	to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 @keyframes bgTransition {
-    from {
-        background-color: #000000;
-    }
+	50% {
+		background-color: var(--bg-color-home);
+	}
 
-    to {
-        background-color: #2b2b2b;
-    }
+	100% {
+		background-color: var(--bg-color);
+	}
 }
