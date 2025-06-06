@@ -1,3 +1,9 @@
+.body-portifolio {
+    background-color: var(--bg-color-home) !important;
+    color: var(--text-color) !important;
+    padding: 0 20px;
+}
+
 .menu_trabalhos {
     display: flex;
     flex-direction: column;
@@ -20,6 +26,9 @@
     overflow: hidden;
     border-radius: 5px;
     animation: RightToLeft 1s ease-out forwards;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .miniatura a {
