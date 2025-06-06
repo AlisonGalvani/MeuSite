@@ -65,20 +65,19 @@ function drawMatrix(ctx, canvas, drops, fontSize) {
     }
 }
 
-function openNav()
-{
+function openNav() {
     var x = document.getElementsByTagName('nav')[0]
     var y = document.getElementById('threeline-icon')
-    
+
     if (x.className === 'navigation') {
         x.className += ' menujs mainAnimeOn'
         y.innerHTML = '&Cross;'
     } else {
         x.className = 'menujs mainAnimeOff'
-        y.innerHTML =  'Menu &#9776;'
+        y.innerHTML = 'Menu &#9776;'
 
-        setTimeout(()=> { 
-            x.className = 'navigation' 
-        }, 2000)
+        setTimeout(() => {
+            x.className = 'navigation'
+        }, 1500)
     }
 }
