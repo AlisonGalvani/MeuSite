@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon.ico">
+
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/curriculo.css">
+
+	<title>Alison Galvani - Resume</title>
+</head>
+
+<script>
+	setTimeout(() => {
+		const page = window.location.pathname;
+
+		const pt = document.getElementById("lang-pt");
+		const en = document.getElementById("lang-en");
+
+		if (page.includes("curriculo_ptbr")) {
+			pt.classList.add("active_cv");
+		} else if (page.includes("curriculo_en")) {
+			en.classList.add("active_cv");
+		}
+	}, 500)
+</script>
+
+<body>
+
+	<nav class="navigation">
+		<a href="index.html">Home</a>
+		<a href="portfolio.html">Portfólio</a>
+		<a href="curriculo.html">Currículo</a>
+		<a href="contato.html">Contato</a>
+		<a id="threeline-icon" class="threeline-icon" onclick="openNav()">Menu &#9776</a>
+	</nav>
+
+	<div class="main bottom-to-top">
+
+		<ul class="caminho">
+			<li><a href="index.html">Home</a></li>
+			<li>></li>
+			<li>Resume</li>
+		</ul>
+
+		<h1>Resume</h1>
+
+		<div class="language-switcher">
+			<a href="curriculo_ptbr.html" class="lang-option" id="lang-pt">Portugês</a>
+			<span class="separator">/</span>
+			<a href="curriculo_en.html" class="lang-option" id="lang-en">English</a>
+		</div>
+
+		<h2>Personal Information</h2>
+		<hr>
+
+		<img src="img/alison-profile2.webp" alt="Photo of Alison Galvani" class="profile-img-curriculo">
+
+		<h3>Name:</h3>
+		<p>Alison Luan Fernandes Galvani</p>
+
+		<h3>Date of Birth:</h3>
+		<p>1994-09-15</p>
+
+		<h3>Location:</h3>
+		<p>Maringá - Paraná, Brazil</p>
+
+		<h2 style="clear: left; padding-top: 10px;">Professional Summary</h2>
+		<hr>
+
+		<p>
+			Software Engineer with 7 years of experience in full-stack web development, systems architecture, technical
+			leadership, and the construction of mission-critical solutions operating 24/7/365 and serving over 70,000
+			active users. Strong expertise in Node.js, JavaScript, PHP, SQL, React, and hardware integration, with a proven
+			ability to design scalable architectures, lead multidisciplinary teams, coordinate projects, and deliver
+			high-reliability systems with a 99% SLA.
+		</p>
+
+		<p>
+			Deep knowledge in security, real-time communication (WebSocket and SSE), agile methodologies, code review, and
+			continuous process improvement. Additional experience with containerization (Docker), CI/CD pipelines
+			(GitHub Actions), Nginx, PM2, Clean Architecture principles, microservices, and automated deployment in Linux
+			environments, as well as practical experience in cloud computing (AWS and related services).
+		</p>
+
+		<p>
+			Recognized ability to transform complex problems into robust, efficient, production-ready solutions. Strong
+			interest in working on global products with complex challenges and large-scale data environments.
+		</p>
+
+		<h2>Technologies &amp; Tools</h2>
+		<hr>
+
+		<p>
+			Node.js; JavaScript; PHP; React; SQL; MySQL; PostgreSQL; SQL Server; WebSocket; REST; Express; Integration;
+			Docker; Docker Compose; Nginx; PM2; Git; GitHub Actions; CI/CD; Linux; Shell Script; Clean Architecture;
+			Microservices; AWS (EC2, S3, API Gateway); Cloud Computing; Deployment Automation; Git Versioning; Jira;
+			Scrum; Kanban.
+		</p>
+
+		<h2>Areas of Expertise</h2>
+		<hr>
+
+		<h3>Systems Architecture &amp; Design</h3>
+		<p>
+			Identify and apply best practices in software architecture to create robust and scalable solutions. Design the
+			project’s design system, frontend architecture, backend structure, and database, defining component
+			relationships and communication between systems and modules.
+		</p>
+		<p>
+			Evaluate and select technologies, frameworks, and tools according to technical and business requirements.
+		</p>
+
+		<h3>Software Development</h3>
+		<p>
+			Creation of robust, high-performance web solutions focused on user experience. Experience implementing strong
+			security measures to protect sensitive data using encryption protocols, JWT authentication, and MFA.
+		</p>
+		<p>
+			Proficiency in Node.js, JavaScript, PHP, React, HTML, CSS, and SQL. Integration with third-party systems and
+			devices to expand functionality and compatibility.
+		</p>
+
+		<h3>Systems &amp; Hardware Integration</h3>
+		<p>
+			Architecture, development, testing, and deployment of access-control systems integrated with third-party systems
+			and hardware.
+		</p>
+		<p>
+			Solid experience designing APIs for external systems to integrate with our platform or vice versa. Specialist in
+			implementing real-time web systems via WebSocket for immediate updates of critical data.
+		</p>
+		<p>
+			Collaboration with operations and infrastructure teams to ensure smooth deployment and system availability.
+		</p>
+
+		<h3>Technical Leadership, Processes &amp; Quality</h3>
+		<p>
+			Coordination of multidisciplinary teams, task assignment, and delivery supervision. Implementation of a
+			code-review culture, best practices, testing routines, and quality metrics.
+		</p>
+		<p>
+			Leading Sprints, executive meetings, strategic alignment, and monthly presentations. Collection and analysis of
+			team and system performance metrics for decision-making.
+		</p>
+
+		<h2>Professional Experience</h2>
+		<hr>
+
+		<span class="cv_infos cv_empresa">One Port Tecnologia em Serviços Ltda</span>
+		<span class="cv_infos cv_cargo">Software Engineer / Senior Developer / Project Manager (Maringá - PR)</span>
+		<span class="cv_infos cv_periodo">Sep/2019 – Oct/2025</span>
+
+		<p>
+			Career progression: Joined as Junior Developer (2019), promoted to Junior Developer II (2022), Senior Developer I
+			(2023), and Senior Developer II (2024), progressively assuming responsibilities in architecture, technical
+			leadership, coordination of a team of 7 developers, and project management.
+		</p>
+		<p>
+			Architecture and development of web systems: responsible for designing system architecture (frontend, backend, and
+			database), defining components, modules, service integrations, and communication with external systems and
+			devices. Experience with Node.js, JavaScript, PHP, SQL, HTML, CSS, React, and Vanilla JS.
+		</p>
+		<p>
+			Development of mission-critical 24/7 solutions: work on security and high-availability systems operating
+			24/7/365, including security measures, access control, authentication, encryption, and hardware integration.
+		</p>
+		<p>
+			Access-control integrations: architecture, development, and testing of access-control systems integrated with
+			hardware from multiple manufacturers (Intelbras, Hikvision, Control ID, Avicam, Nice, PPA), ensuring
+			interoperability and high operational reliability.
+		</p>
+		<p>
+			APIs and real-time communication: creation of APIs for third-party integration and implementation of real-time
+			communication using WebSocket, connecting backend and frontend for immediate updates in environments processing
+			over 300,000 events per day.
+		</p>
+		<p>
+			Technical leadership and mentoring: coordination of major development projects, task distribution, deadline
+			management, and quality supervision. Responsible for training and mentoring more than 10 junior and mid-level
+			developers, structuring onboarding, continuous guidance, and team evolution.
+		</p>
+		<p>
+			Quality culture &amp; code review: strengthening the internal code-review culture, systematic evaluation of
+			deliveries, rigorous testing, and bug-fix tracking to ensure quality and maintainability.
+		</p>
+		<p>
+			Agile management &amp; processes: definition and monitoring of monthly Sprints (Scrum/Kanban), Sprint planning
+			with the CEO and Operations Manager, and leading monthly company-wide meetings to present development results.
+		</p>
+		<p>
+			Performance metrics: collection and analysis of individual and sector-wide development metrics to evaluate
+			productivity, quality, professional growth, and guide managerial decisions.
+		</p>
+		<p>
+			Versioning &amp; releases: responsible for the bi-weekly release cycle of all systems, including deployment,
+			publication, and communication with clients, using Git for version control.
+		</p>
+		<p>
+			Field support &amp; issue resolution: on-site analysis of system issues, implementing structured corrections to
+			ensure operational continuity and user satisfaction.
+		</p>
+		<p>
+			Technical documentation: creation of detailed technical documentation (manuals, code descriptions, module
+			behavior, integrations) to support the technical team and future maintenance.
+		</p>
+
+		<span class="cv_infos cv_empresa">Elotech Gestão Pública Ltda</span>
+		<span class="cv_infos cv_cargo">Intern / Junior Developer (Maringá - PR)</span>
+		<span class="cv_infos cv_periodo">Jul/2018 – Jul/2019</span>
+
+		<p>
+			Development of new features, maintenance, and bug fixes in the accounting module using Delphi.
+		</p>
+		<p>
+			Development and maintenance of the Transparency Portal module using Java and React.
+		</p>
+		<p>
+			Implementation of automated frontend and backend tests for the Transparency Portal.
+		</p>
+		<p>
+			Use of best programming practices, version control, and participation in monthly Sprints under Scrum.
+		</p>
+		<p>
+			Promoted from Intern to Junior Developer in 9 months due to performance and delivery quality.
+		</p>
+		<p>
+			Trained senior Delphi developers to assume maintenance of the Transparency Portal (Java/React), ensuring project
+			continuity upon departure.
+		</p>
+
+		<span class="cv_infos cv_empresa">One Support Tecnologia Ltda</span>
+		<span class="cv_infos cv_cargo">Systems Analyst (Maringá - PR)</span>
+		<span class="cv_infos cv_periodo">Feb/2014 – Jul/2018</span>
+
+		<p>
+			System support (local and remote) and Helpdesk for clients of various sizes.
+		</p>
+		<p>
+			Configuration, support, and maintenance of VoIP solutions (Elastix, Issabel, Asterisk, telephony gateways,
+			IP phones).
+		</p>
+		<p>
+			Configuration and administration of networks (infrastructure, management, firewall, Mikrotik).
+		</p>
+		<p>
+			Server and database configuration, support, and maintenance (basic SQL).
+		</p>
+		<p>
+			Support, configuration, and management of video-monitoring solutions (DVRs, monitoring software).
+		</p>
+
+		<h2>Education</h2>
+		<hr>
+        <h3>2020-2021</h3>
+        <p>Basic English Course – Cultura Inglesa Maringá</p>
+
+        <h3>2015-2019</h3>
+        <p>Bachelor’s Degree in Software Engineering – Unicesumar (Maringá)</p>
+
+        <h3>2012-2013</h3>
+        <p>Web Design – Datacomp Brasil (Maringá)</p>
+
+        <h3>2010-2012</h3>
+        <p>High School – Colégio Estadual Dr. Gastão Vidigal (Maringá)</p>
+
+        <h3>2009-2011</h3>
+        <p>Advanced Hardware – Microcamp (Maringá)</p>
+
+
+		<h2>Languages</h2>
+		<hr>
+		<p>Portuguese — Native</p>
+		<p>English — A2 (Basic). Currently studying with continuous improvement focused on technical communication for international teams.</p>
+
+		<h2>Awards &amp; Recognition</h2>
+		<hr>
+		<p>Winner of the 2nd Unicesumar Hackathon – Prototypes Category (Sep/2016).</p>
+		<p>Research project approved for presentation at XI EPCC – International Scientific Production Meeting (Oct/2019).</p>
+		<p>Best Capstone Project in Software Engineering – Score 9.5 (Nov/2019).</p>
+		<p>Top student in the 4th term of Software Engineering and participation in exclusive institutional event for top academic performers (Nov/2019).</p>
+
+		<h2>Academic Projects</h2>
+		<hr>
+		<p>
+			Capstone project: “Implementation of an Ontology Prototype for Bug Reporting” (2019 — Score 9.5).
+		</p>
+		<p>
+			Published article: “Enhancing Bug Report Clarity and Efficiency Through Ontology Prototypes” in the International
+			Journal of Professional Business Review (JBReview), Aug/2025.
+			Link:
+			<a href="https://openaccessojs.com/JBReview/article/view/5618" target="_blank">
+				https://openaccessojs.com/JBReview/article/view/5618
+			</a>
+		</p>
+
+		<h2>Contact</h2>
+		<hr>
+
+		<p>Email: <a href="mailto:alisonfgalvani@gmail.com">alisonfgalvani@gmail.com</a></p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/in/alison-galvani/" target="_blank">linkedin.com/in/alison-galvani</a></p>
+		<p>GitHub: <a href="https://github.com/AlisonGalvani" target="_blank">github.com/AlisonGalvani</a></p>
+
+		<a class="back-link" href="index.html">&larr; Back to home<a>
+
+	</div>
+
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
