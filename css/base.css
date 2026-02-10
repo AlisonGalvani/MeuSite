@@ -55,6 +55,11 @@ nav .threeline-icon:hover {
 	cursor: pointer;
 }
 
+a {
+	color: #007bff;
+    font-weight: 500;
+} 
+
 @media (max-width: 1000px) {
 	nav a {
 		display: none;
@@ -143,7 +148,7 @@ header {
 
 .main h2 {
 	color: var(--primary-color);
-	font-size: 16px;
+	font-size: 19px;
 	text-transform: uppercase;
 	font-weight: normal;
 	margin-top: 40px;

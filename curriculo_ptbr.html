@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon.ico">
+
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/curriculo.css">
+
+	<title>Alison Galvani - Currículo</title>
+</head>
+
+<script>
+	setTimeout(() => {
+		const page = window.location.pathname;
+
+		const pt = document.getElementById("lang-pt");
+		const en = document.getElementById("lang-en");
+
+		if (page.includes("curriculo_ptbr")) {
+			pt.classList.add("active_cv");
+		} else if (page.includes("curriculo_en")) {
+			en.classList.add("active_cv");
+		}
+	}, 500)
+</script>
+
+<body>
+
+	<nav class="navigation">
+		<a href="index.html">Home</a>
+		<a href="portfolio.html">Portfólio</a>
+		<a href="curriculo_ptbr.html">Currículo</a>
+		<a href="contato.html">Contato</a>
+		<a id="threeline-icon" class="threeline-icon" onclick="openNav()">Menu &#9776</a>
+	</nav>
+
+
+	<div class="main bottom-to-top">
+
+		<ul class="caminho">
+			<li><a href="index.html">Home</a></li>
+			<li>></li>
+			<li>Currículo</li>
+		</ul>
+
+		<h1>Currículo</h1>
+
+		<div class="language-switcher">
+			<a href="curriculo_ptbr.html" class="lang-option" id="lang-pt">Portugês</a>
+			<span class="separator">/</span>
+			<a href="curriculo_en.html" class="lang-option" id="lang-en">English</a>
+		</div>
+
+		<h2>Dados Pessoais</h2>
+		<hr>
+
+		<img src="img/alison-profile2.webp" alt="Foto de Alison Galvani" class="profile-img-curriculo">
+
+		<h3>Nome:</h3>
+		<p>Alison Luan Fernandes Galvani</p>
+
+		<h3>Data de Nascimento:</h3>
+		<p>15/09/1994</p>
+
+		<h3>Residência:</h3>
+		<p>Maringá - PR, Brasil</p>
+
+		<!-- A PARTIR DAQUI: CONTEÚDO ATUALIZADO COM BASE NO CURRÍCULO NOVO -->
+
+		<h2 style="clear: left; padding-top: 10px;">Sobre Mim</h2>
+		<hr>
+
+		<p>
+			Engenheiro de Software com 7 anos de experiência em desenvolvimento web full stack, arquitetura de sistemas,
+			liderança técnica e construção de soluções críticas operando 24/7/365, atendendo mais de 70 mil usuários ativos.
+		</p>
+
+		<p>
+			Forte atuação em Node.js, JavaScript, PHP, SQL, React e integração com hardware, com experiência comprovada em
+			projetar arquiteturas escaláveis, liderar equipes multidisciplinares, coordenar projetos e entregar sistemas de
+			alta confiabilidade com SLA de 99%.
+		</p>
+
+		<p>
+			Profundo conhecimento em segurança, integração em tempo real (WebSocket e SSE), metodologias ágeis, revisão de código
+			e melhoria contínua de processos. Experiência adicional com contêinerização (Docker), pipelines de CI/CD (GitHub Actions),
+			Nginx, PM2, princípios de Clean Architecture, microserviços e automação de deploy em ambientes Linux, além de conhecimentos
+			práticos em cloud computing (AWS e serviços correlatos).
+		</p>
+
+		<p>
+			Capacidade reconhecida de transformar problemas complexos em soluções robustas, eficientes e prontas para produção.
+			Interesse em atuar em produtos globais com desafios complexos e grande volume de dados.
+		</p>
+
+		<h2>Educação</h2>
+		<hr>
+		<h3>2020-2021</h3>
+		<p>Curso de Inglês módulo básico - Cultura Inglesa Maringá</p>
+
+		<h3>2015-2019</h3>
+
+		<p>Bacharelado em Engenharia de Software - Unicesumar (Maringá).</p>
+
+		<h3>2012-2013</h3>
+
+		<p>Web Design - Datacomp Brasil (Maringá)</p>
+
+		<h3>2010-2012</h3>
+
+		<p>Ensino médio - Colégio estadual Dr. Gastão Vidigal (Maringá)</p>
+
+		<h3>2009-2011</h3>
+
+		<p>Hardware avançado - Microcamp (Maringá)</p>
+
+		<h2>Experiência de Trabalho</h2>
+		<hr>
+
+		<span class="cv_infos cv_empresa">One Port Tecnologia em Serviços Ltda </span>
+		<span class="cv_infos cv_cargo">Engenheiro de Software / Desenvolvedor Sênior / Gerente de Projetos (Maringá - PR)</span>
+		<span class="cv_infos cv_periodo">Set/2019 – Out/2025</span>
+
+		<p>
+			Evolução de carreira: Ingresso como Desenvolvedor Júnior (2019), promoções para Desenvolvedor Júnior II (2022),
+			Desenvolvedor Sênior I (2023) e Desenvolvedor Sênior II (2024), assumindo progressivamente responsabilidades de
+			arquitetura, liderança técnica, coordenação de equipe com 7 desenvolvedores e gestão de projetos.
+		</p>
+		<p>
+			Responsável por projetar a arquitetura de sistemas web (frontend, backend e banco de dados), definir componentes,
+			módulos, integrações entre serviços e comunicação com outros sistemas e equipamentos. Atuação com Node.js, JavaScript,
+			PHP, SQL, HTML, CSS, React e Vanilla JS.
+		</p>
+		<p>
+			Atuação em sistemas de segurança e missão crítica com alta disponibilidade (24/7/365), incluindo implementação de
+			medidas de segurança, controle de acesso, autenticação, criptografia e integração com hardware.
+		</p>
+		<p>
+			Arquitetura, desenvolvimento e testes de sistemas de controle de acesso integrados a dispositivos de diversos
+			fabricantes (Intelbras, Hikvision, Control iD, Avicam, Nice, PPA, entre outros), garantindo interoperabilidade,
+			confiabilidade e alta disponibilidade na operação.
+		</p>
+		<p>
+			Criação de APIs para integração com sistemas de terceiros e implementação de soluções em tempo real com WebSocket,
+			conectando APIs e frontend para atualizações imediatas de informações críticas em ambientes que geram mais de
+			300 mil eventos por dia.
+		</p>
+		<p>
+			Coordenação dos principais projetos de desenvolvimento da empresa, organização e distribuição de tarefas,
+			acompanhamento de prazos e qualidade das entregas. Responsável por ensinar, treinar e orientar mais de
+			10 desenvolvedores juniores e plenos, estruturando processos de onboard, mentoria contínua e evolução técnica do time.
+		</p>
+		<p>
+			Implantação e fortalecimento da cultura de revisão de código, testes rigorosos e acompanhamento de correções de bugs,
+			garantindo qualidade, manutenibilidade e aderência a boas práticas.
+		</p>
+		<p>
+			Definição e acompanhamento de Sprints (Scrum/Kanban), montagem de Sprints mensais com o CEO e Gerente Operacional,
+			coordenação de reuniões mensais com toda a empresa para apresentação das entregas do desenvolvimento e alinhamento
+			com demais áreas.
+		</p>
+		<p>
+			Levantamento de métricas individuais e do setor de desenvolvimento para avaliar produtividade, qualidade,
+			evolução profissional e apoiar decisões de gestão (novas contratações, mudanças de processo, priorização de demandas).
+		</p>
+		<p>
+			Responsável pela geração quinzenal de versões de todos os sistemas, publicação de novas releases aos clientes,
+			controle de mudanças e versionamento com Git.
+		</p>
+		<p>
+			Atuação em campo para análise e resolução de problemas diretamente em ambientes de clientes, definição de correções
+			rápidas e estruturadas, garantindo continuidade da operação e satisfação dos usuários finais.
+		</p>
+		<p>
+			Produção de documentação técnica detalhada (manuais, descrições de código, explicações de funcionamento de módulos
+			e integrações) para apoiar o time técnico e facilitar a manutenção futura.
+		</p>
+
+		<span class="cv_infos cv_empresa">Elotech Gestão Pública Ltda</span>
+		<span class="cv_infos cv_cargo">Estagiário em Desenvolvimento / Desenvolvedor Júnior (Maringá - PR)</span>
+		<span class="cv_infos cv_periodo">Jul/2018 – Jul/2019</span>
+
+		<p>
+			Desenvolvimento de novas funcionalidades, manutenção e correção de problemas no módulo contábil usando Delphi.
+		</p>
+		<p>
+			Desenvolvimento, manutenção e correção de funcionalidades no módulo Portal da Transparência, usando Java e React.
+		</p>
+		<p>
+			Implementação de testes automatizados de frontend e backend para o módulo Portal da Transparência, contribuindo
+			para a estabilidade das entregas.
+		</p>
+		<p>
+			Uso de boas práticas de programação, controle de versão e participação em Sprints mensais seguindo metodologia Scrum.
+		</p>
+		<p>
+			Efetivado de Estagiário para Desenvolvedor Júnior em 9 meses, em função da performance e qualidade das entregas.
+		</p>
+		<p>
+			Responsável por treinar colaboradores experientes em Delphi para assumirem manutenção e evolução do módulo Portal da
+			Transparência (Java/React), garantindo continuidade do projeto após sua saída.
+		</p>
+
+		<span class="cv_infos cv_empresa">One Support Tecnologia Ltda</span>
+		<span class="cv_infos cv_cargo">Analista de Sistemas (Maringá - PR)</span>
+		<span class="cv_infos cv_periodo">Fev/2014 – Jul/2018</span>
+
+		<p>
+			Suporte a sistemas (local e remoto) e atendimento Helpdesk para clientes de diferentes portes.
+		</p>
+		<p>
+			Configuração, suporte e manutenção de soluções de telefonia VoIP (Elastix, Issabel, Asterisk, gateways de telefonia,
+			telefones IP).
+		</p>
+		<p>
+			Configuração e administração de redes (infraestrutura, gerenciamento, firewall, Mikrotik), garantindo estabilidade
+			e segurança do ambiente.
+		</p>
+		<p>
+			Configuração, suporte e gerenciamento de servidores e bancos de dados (SQL básico).
+		</p>
+		<p>
+			Suporte, configuração e gerenciamento de soluções de monitoramento de imagens (DVRs, softwares de monitoramento),
+			integrando infraestrutura de rede, servidores e sistemas.
+		</p>
+
+		<h2>Habilidades</h2>
+		<hr>
+
+		<h3>Tecnologias &amp; Ferramentas</h3>
+		<p>
+			Node.js, JavaScript, PHP, React, HTML, CSS, SQL, MySQL, PostgreSQL, SQL Server, WebSocket, REST, Express,
+			integração de sistemas, Docker, Docker Compose, Nginx, PM2, Git, GitHub Actions, CI/CD, Linux, Shell Script,
+			Clean Architecture, Microservices, AWS (EC2, S3, API Gateway), Cloud Computing, automação de deploy, versionamento
+			com Git, Jira, Scrum e Kanban.
+		</p>
+
+		<h3>Arquitetura e Design de Sistemas</h3>
+		<p>
+			Identificação e aplicação de melhores práticas em arquitetura de software para criar soluções robustas e escaláveis.
+			Concepção de design system, arquitetura de frontend, backend e banco de dados, definindo relações entre componentes
+			e comunicações com outros sistemas e módulos.
+		</p>
+		<p>
+			Avaliação e seleção de tecnologias, frameworks e ferramentas adequadas conforme requisitos técnicos e de negócio.
+		</p>
+
+		<h3>Desenvolvimento de Software</h3>
+		<p>
+			Criação de soluções web robustas, performáticas e com foco em experiência do usuário.
+		</p>
+		<p>
+			Implementação de medidas de segurança para proteção de dados sensíveis dos usuários, utilizando protocolos de
+			encriptação compatíveis entre várias linguagens, autenticação JWT e MFA.
+		</p>
+		<p>
+			Proficiência em Node.js, JavaScript, PHP, React, HTML, CSS e SQL, com experiência em integração com sistemas
+			e dispositivos de terceiros.
+		</p>
+
+		<h3>Integração de Sistemas e Hardware</h3>
+		<p>
+			Arquitetura, desenvolvimento, testes e implantação de sistemas de controle de acesso integrados com hardwares
+			de diferentes fabricantes.
+		</p>
+		<p>
+			Experiência em arquitetar APIs para que sistemas de terceiros se integrem, ou para integrar sistemas próprios
+			a plataformas externas.
+		</p>
+		<p>
+			Especialista em implementação de sistemas web com WebSocket, visando atualizações imediatas e em tempo real
+			de informações críticas.
+		</p>
+
+		<h3>Liderança Técnica, Processos e Qualidade</h3>
+		<p>
+			Coordenação de equipes multidisciplinares, distribuição de tarefas e supervisão de entregas.
+		</p>
+		<p>
+			Implantação de cultura de revisão de código, boas práticas, testes e métricas de qualidade.
+		</p>
+		<p>
+			Condução de Sprints, reuniões executivas, alinhamento estratégico e apresentações periódicas de resultados.
+		</p>
+		<p>
+			Levantamento e análise de métricas de performance da equipe e dos sistemas para suporte à tomada de decisão.
+		</p>
+
+		<h2>Idiomas</h2>
+		<hr>
+		<p>Português — Nativo</p>
+		<p>Inglês — A2 (básico), em evolução contínua com foco em comunicação técnica para equipes internacionais.</p>
+
+		<h2>Prêmios e Reconhecimentos</h2>
+		<hr>
+		<p>Vencedor do II Hackathon da Unicesumar – Categoria Protótipos (Set/2016).</p>
+		<p>Projeto aprovado para apresentação no XI EPCC – Encontro Internacional de Produção Científica (Out/2019).</p>
+		<p>Melhor TCC do curso de Engenharia de Software – Nota 9,5 (Nov/2019).</p>
+		<p>Melhor aluno do curso no 4º bimestre de 2019 – participação em evento institucional exclusivo da Unicesumar (Nov/2019).</p>
+
+		<h2>Projetos Acadêmicos</h2>
+		<hr>
+		<p>
+			Trabalho de conclusão de curso: “Implementação de um protótipo de ontologia para relatos de bug”
+			(2019 – nota 9,5).
+		</p>
+		<p>
+			Publicação do artigo “Enhancing Bug Report Clarity and Efficiency Through Ontology Prototypes” na revista
+			International Journal of Professional Business Review (JBReview), agosto de 2025.
+		</p>
+
+		<h2>Contato</h2>
+		<hr>
+
+		<p>Email: <a href="mailto:alisonfgalvani@gmail.com">alisonfgalvani@gmail.com</a></p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/in/alison-galvani/" target="_blank">linkedin.com/in/alison-galvani</a></p>
+		<p>GitHub: <a href="https://github.com/AlisonGalvani" target="_blank">github.com/AlisonGalvani</a></p>
+
+		<a class="back-link" href="index.html">&larr;Voltar ao início<a>
+
+	</div>
+
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

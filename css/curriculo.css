@@ -16,3 +16,49 @@ body {
 		width: 160px;
 	}
 }
+
+.cv_infos {
+	color: white;
+    text-transform: uppercase;
+	display: block;
+}
+
+.cv_empresa {
+	color: var(--primary-color);
+	font-size: 15px;
+}
+.cv_cargo {
+	font-size: 13px;
+    font-style: italic;
+}
+.cv_periodo {
+	font-size: 12px;
+}
+
+.language-switcher {
+    margin-top: -10px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.language-switcher .lang-option {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 2px 7px;
+    border-radius: 4px;
+}
+
+.language-switcher .lang-option:hover {
+    background-color: rgba(255,255,255,0.08);
+}
+
+.language-switcher .active_cv {
+    border: 2px solid var(--primary-color);
+    font-weight: 600;
+}
+
+.language-switcher .separator {
+    margin: 0 4px;
+    color: var(--primary-color);
+}
