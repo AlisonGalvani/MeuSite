@@ -81,3 +81,38 @@ function openNav() {
         }, 1500)
     }
 }
+
+function initLightbox() {
+    const overlay = document.createElement('div')
+    overlay.id = 'lightbox-overlay'
+    overlay.innerHTML = '<span class="lightbox-close">&times;</span><img alt="">'
+    document.body.appendChild(overlay)
+
+    const fullImg = overlay.querySelector('img')
+
+    function closeLightbox() {
+        overlay.classList.remove('open')
+    }
+
+    overlay.addEventListener('click', closeLightbox)
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox()
+    })
+
+    document.querySelectorAll('img.lightbox-trigger').forEach((img) => {
+        const wrapper = document.createElement('div')
+        wrapper.className = 'lightbox-wrapper'
+        img.parentNode.insertBefore(wrapper, img)
+        wrapper.appendChild(img)
+        wrapper.insertAdjacentHTML('beforeend', '<span class="lightbox-icon">🔍</span>')
+
+        wrapper.addEventListener('click', () => {
+            fullImg.src = img.src
+            fullImg.alt = img.alt
+            overlay.classList.add('open')
+        })
+    })
+}
+
+document.addEventListener('DOMContentLoaded', initLightbox)
