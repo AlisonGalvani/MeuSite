@@ -90,6 +90,12 @@
 			foi só a partir dessa sincronização que o relatório pedido pelo CEO finalmente ganhou vida.
 		</p>
 		<p>
+			Para que essa camada pudesse crescer sem virar um emaranhado de código, apliquei desde o início princípios
+			de Clean Architecture e SOLID na organização da API, separando claramente a captura de eventos, a
+			persistência dos dados e a sincronização com o sistema principal — o que facilitou bastante a manutenção
+			e a evolução do projeto nos anos seguintes.
+		</p>
+		<p>
 			O projeto levou cerca de 3 meses pra sair do papel, entre maio e agosto de 2021. Contei com apoio de um
 			especialista em centrais de telefonia IP pra entender o funcionamento da central por dentro, e de um
 			desenvolvedor sênior que ficou mais no escopo de ideias e apoio em pontos complexos do processo, mas a
@@ -100,9 +106,13 @@
 		<p>O Asterisk-AMI foi construído do zero, utilizando:</p>
 		<ul>
 			<li>NodeJS</li>
+			<li>TypeScript</li>
 			<li>Asterisk Manager Interface (AMI)</li>
 			<li>API REST</li>
+			<li>Clean Architecture e princípios SOLID na organização do projeto</li>
 			<li>Banco de dados relacional (MySQL) desenhado especificamente pra essa operação</li>
+			<li>MongoDB para armazenamento bruto dos eventos de chamada em alto volume, antes das agregações
+				enviadas ao MySQL</li>
 			<li>Sincronização de dados com o sistema principal da One</li>
 		</ul>
 
