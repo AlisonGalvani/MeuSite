@@ -12,7 +12,22 @@ const codeLines = [
     'function nome_e_sobrenome(nome, sobrenome) { return nome + " " + sobrenome; }',
     'let projetos = ["Site Pessoal", "API NodeJS", "Dashboard"];',
     'let habilidades = ["NodeJS", "PHP", "SQL", "React", "VanillaJS", "JavaScript", "HTML", "CSS", "Git"];',
-    'console.log("Iniciando sistema...");'
+    'console.log("Iniciando sistema...");',
+    'interface Usuario { nome: string; ativo: boolean; }',
+    'test("soma deve retornar 4", () => { expect(soma(2, 2)).toBe(4); });',
+    'class ControleAcessoService { constructor(private readonly repo) {} }',
+    'db.eventos.insertOne({ tipo: "acesso", data: new Date() });',
+    'const ws = new WebSocket("wss://api.exemplo.com");',
+    'aws s3 cp ./build s3://meu-bucket --recursive',
+    'const authService = axios.create({ baseURL: "http://auth-service:3001" });',
+    'export async function getServerSideProps() { return { props: {} } }',
+    '@Controller("usuarios") export class UsuariosController {}',
+    'const [dados, setDados] = useState([]);',
+    'SELECT * FROM usuarios WHERE ativo = true;',
+    'git commit -m "feat: adiciona autenticação JWT"',
+    'const token = jwt.sign({ id: usuario.id }, process.env.JWT_SECRET);',
+    'docker-compose up -d --build',
+    'npm run build && npm test # pipeline CI/CD'
 ]
 
 function spawnCode() {
@@ -27,7 +42,7 @@ function spawnCode() {
     setTimeout(() => div.remove(), 10000)
 }
 function animation2Start() {
-    setInterval(spawnCode, 150)
+    setInterval(spawnCode, 300)
 }
 
 
