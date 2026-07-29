@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon.ico">
+
+	<link rel="stylesheet" href="../css/base.css">
+
+	<title>Alison Galvani - One Race</title>
+
+	<style>
+		body {
+			background-color: var(--bg-color-home);
+			animation: bgTransition 2.5s ease forwards;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navigation">
+		<a href="../index.html">Home</a>
+		<a href="../portfolio.html">Portfólio</a>
+		<a href="../curriculo_ptbr.html">Currículo</a>
+		<a href="../contato.html">Contato</a>
+		<a id="threeline-icon" class="threeline-icon" onclick="openNav()">Menu &#9776</a>
+	</nav>
+
+	<div class="main top-to-bottom">
+
+		<ul class="caminho">
+			<li><a href="../index.html">Home</a></li>
+			<li>></li>
+			<li><a href="../portfolio.html">Portfólio</a></li>
+			<li>></li>
+			<li>One Race</li>
+		</ul>
+
+		<h1>One Race</h1>
+
+		<img src="../img/portfolio/OneRace/mkp2.webp" class="foto-trabalhos lightbox-trigger"
+			alt="One Race, sistema de cronometragem e gestão de corridas de kart">
+
+		<h2>💠 One Race – Sistema de Cronometragem e Gestão de Corridas</h2>
+		<p>
+			O <a href="https://onerace.com.br/" target="_blank" style="color: var(--primary-color)">One Race</a> é
+			uma plataforma completa de cronometragem e gestão de corridas, hoje em uso real em pistas de kart.
+			Feito do zero à produção, um hardware captura o sinal dos karts, processa os tempos de volta e os envia ao
+			sistema em nuvem que transforma esses dados em rankings, corridas, pontuação e relatórios em tempo real para pilotos,
+			equipes e administradores.
+		</p>
+		<p>
+			O sistema substitui cronometragem manual e planilhas improvisadas em pistas, com clientes
+			reais utilizando o One Race no dia a dia das corridas, evitando falhas humanas e ajudando os
+			pilotos e equipes a desempenharem melhor com base nos dados de cada volta.
+		</p>
+		<p>
+			Acesse em
+			<a href="https://onerace.com.br/" target="_blank" style="color: var(--primary-color)">onerace.com.br</a>.
+		</p>
+
+		<h2>🚀 Da pista para a nuvem: como funciona a cronometragem em tempo real</h2>
+		<p>
+			Cada kart carrega uma TAG de cronometragem vinculada ao piloto e ao kart dentro do sistema. Quando o kart
+			passa pelo sensor na pista, esse evento é capturado pelo hardware, processado de forma offline por um sistema integrado,
+			e enviado a um servidor em nuvem, que valida a leitura, descarta eventuais duplicatas causadas por leituras sequenciais do sensor 
+			e converte o evento em uma volta oficial, atualizando automaticamente a posição do piloto na corrida e alimentando rankings.
+		</p>
+		<p>
+			Todo esse processamento acontece em milissegundos, e o resultado é propagado em tempo real para todas as
+			telas conectadas: paineis de operador, paineis de cronometragem do piloto, telão de acompanhamento ao vivo
+			e telas para o diretor de prova para o auxiliar em decisões. Tudo isso sem qualquer necessidade de recarregar a página.
+		</p>
+
+		<img src="../img/portfolio/OneRace/mkp3.webp" class="foto-trabalhos lightbox-trigger"
+			alt="Painel de cronometragem em tempo real do One Race">
+
+		<h2>🏗️ Decisões de arquitetura e engenharia</h2>
+		<p>
+			Cada escolha técnica foi pensada para equilibrar velocidade de desenvolvimento com robustez de verdade, 
+			afinal existem clientes reais dependendo do sistema durante uma corrida ao vivo. 
+			Alguns dos pontos mais importantes:
+		</p>
+		<ul>
+			<li>
+				<strong>SPA + BaaS:</strong> optei por um front-end React/TypeScript consumindo um backend completo
+				em nuvem (banco de dados, autenticação, tempo real, armazenamento de arquivos e funções serverless),
+				o que me permitiu, atuando sozinho, manter velocidade de entrega sem abrir mão de manter as regras de
+				negócio no lugar certo: no servidor, não espalhadas pelo cliente.
+			</li>
+			<li>
+				<strong>Controle de acesso por papel:</strong> perfis como administrador de pista, administrador de
+				equipe e piloto têm suas permissões garantidas diretamente no banco de dados, e não apenas pela
+				interface. Isso garante que, por exemplo, um administrador de pista só consiga enxergar e alterar os
+				dados da sua própria pista, mesmo que o sistema fosse acessado de outra forma.
+			</li>
+			<li>
+				<strong>Motor de pontuação configurável:</strong> cada pista define sua própria tabela de pontos por
+				posição, bônus de pole position e volta mais rápida, e penalizações por infração. Essa regra de
+				negócio é centralizada no servidor, garantindo que o resultado final da corrida seja sempre calculado
+				de forma consistente e auditável.
+			</li>
+			<li>
+				<strong>Confiabilidade da cronometragem:</strong> validações automáticas evitam a contagem duplicada
+				de voltas por ruído do sensor, e um mecanismo de reprocessamento permite recuperar e recalcular voltas
+				que, por qualquer motivo, não tenham sido processadas corretamente. Um cuidado importante em um
+				sistema que lida com hardware físico em campo.
+			</li>
+			<li>
+				<strong>Relatórios e comunicação:</strong> geração de relatórios completos em PDF direto no navegador
+				e envio automático por e-mail, para que pistas e pilotos recebam o resultado oficial da corrida sem
+				esforço manual.
+			</li>
+			<li>
+				<strong>Aplicativo instalável (PWA):</strong> o sistema funciona como um app instalável no celular,
+				permitindo que operadores de pista o usem como um aplicativo nativo sem depender de lojas de
+				aplicativos.
+			</li>
+		</ul>
+
+		<h2>🔌 Integração com o hardware</h2>
+		<p>
+			Além do sistema em nuvem, também arquitetei e desenvolvi a camada que conversa diretamente com o hardware
+			de cronometragem na pista: um serviço em Node.js dentro de um hardware responsável por interpretar as leituras físicas dos
+			sensores/transponders, armazená-las de forma offline caso a conexão com a nuvem falhe, traduzi-las nos eventos que o sistema 
+			em nuvem processa e envia-los para a nuvem quando houver conexão. 
+			Esse sistema contem um pequeno painel em feito em React para configuração e acompanhamento do equipamento em campo. 
+			Ou seja, construi o pipeline, do sensor físico na pista até o número exibido em tempo real na tela do espectador.
+		</p>
+
+		<h2>🤖 Construído com apoio de IA, sob minha arquitetura e decisões</h2>
+		<p>
+			Para acelerar o desenvolvimento, contei com apoio de ferramentas de IA durante a construção do projeto.
+			Mas toda a arquitetura, modelagem do banco de dados, regras de segurança, lógica de negócio, decisões de
+			UX e revisão de cada linha de código que foi para produção partiram de mim. Uso IA da mesma forma que
+			usaria qualquer ferramenta de produtividade: como acelerador, nunca como substituto do julgamento
+			técnico. Isso se torna ainda mais importante em um sistema com clientes reais e dados de corrida em
+			tempo real.
+		</p>
+
+		<img src="../img/portfolio/OneRace/mkp4.webp" class="foto-trabalhos lightbox-trigger"
+			alt="Tela de gestão de corridas do One Race">
+
+		<h2>👨‍💻 Minha contribuição e impacto</h2>
+		<ul>
+			<li>Idealizador, arquiteto e desenvolvedor do projeto, da concepção até a produção, incluindo
+				modelagem de banco de dados, segurança, front-end, back-end e a integração com o hardware de
+				cronometragem.</li>
+			<li>Sistema em produção, com pistas de kart usando a plataforma como ferramenta oficial de cronometragem
+				e gestão de corridas no dia a dia.</li>
+			<li>Substituição de cronometragem manual e planilhas por uma solução profissional, em tempo real e
+				auditável, elevando a experiência de pilotos, equipes e público.</li>
+			<li>Responsabilidade end-to-end: da decisão de arquitetura à operação em campo, incluindo suporte às
+				pistas clientes.</li>
+		</ul>
+
+		<h2>Tecnologias</h2>
+		<p>Front-end (SPA):</p>
+		<ul>
+			<li>React + TypeScript</li>
+			<li>Vite (com SWC)</li>
+			<li>React Router DOM</li>
+			<li>Tailwind CSS</li>
+			<li>shadcn/ui + Radix UI</li>
+			<li>React Hook Form + Zod</li>
+			<li>TanStack React Query</li>
+			<li>Recharts</li>
+			<li>jsPDF + html2canvas (geração de PDF no navegador)</li>
+			<li>PWA (Service Worker + Manifest, app instalável)</li>
+		</ul>
+
+		<p>Back-end (Supabase):</p>
+		<ul>
+			<li>PostgreSQL (20+ tabelas modelando corridas, pilotos, karts, equipes, pistas e pontuação)</li>
+			<li>Supabase Auth (e-mail/senha e Google OAuth)</li>
+			<li>Row-Level Security (RLS) para controle de acesso por papel diretamente no banco de dados</li>
+			<li>Funções e regras de negócio no banco de dados para processamento automático de voltas e cálculo de
+				pontuação</li>
+			<li>Supabase Realtime (atualizações ao vivo sem polling)</li>
+			<li>Supabase Storage (logos, layouts de pista, publicidades, avatares)</li>
+			<li>Supabase Edge Functions (Deno) para cronometragem, pontuação, relatórios e administração de usuários
+			</li>
+			<li>Integração com provedor de e-mail transacional para envio automático de relatórios</li>
+		</ul>
+
+		<p>Hardware e integração de campo:</p>
+		<ul>
+			<li>Node.js (serviço de captura e tradução dos eventos do sensor de cronometragem)</li>
+			<li>React (painel de configuração do equipamento em campo)</li>
+		</ul>
+
+		<br><br>
+		<a class="back-link" href="../portfolio.html">&larr;Voltar ao portfólio<a>
+
+	</div>
+
+	<script type="text/javascript" src="../js/index.js"></script>
+</body>
+
+</html>
